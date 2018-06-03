@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    app:cardCornerRadius="@dimen/corner_radius"
+    app:cardElevation="@dimen/elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textEventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:textColor="@color/colorPrimary"
+            tools:text="Sen, 05 Mar 2018" />
+
+        <TextView
+            android:id="@+id/textHomeTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textEventDate"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/textScoreHome"
+            android:layout_toStartOf="@+id/textScoreHome"
+            android:textAppearance="@style/TextAppearanceMedium"
+            tools:text="Brighton" />
+
+        <TextView
+            android:id="@+id/textAwayTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textEventDate"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/textScoreAway"
+            android:layout_toRightOf="@+id/textScoreAway"
+            android:textAppearance="@style/TextAppearanceMedium"
+            tools:text="Arsenal" />
+
+        <TextView
+            android:id="@+id/textScoreAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textEventDate"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/textVersus"
+            android:layout_toRightOf="@+id/textVersus"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textStyle="bold"
+            tools:text="3" />
+
+        <TextView
+            android:id="@+id/textVersus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textEventDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/versus"
+            android:textAppearance="@style/TextAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textScoreHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textEventDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/textVersus"
+            android:layout_toStartOf="@+id/textVersus"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textStyle="bold"
+            tools:text="2" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

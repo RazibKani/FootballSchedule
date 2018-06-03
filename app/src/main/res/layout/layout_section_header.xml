@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/layout_section_home_team"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textScoreHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/versus"
+        android:textAppearance="@style/TextAppearanceLarge"
+        android:textSize="28sp"
+        tools:text="3" />
+
+    <TextView
+        android:id="@+id/textVersus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/versus"
+        android:textAppearance="@style/TextAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textScoreAway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/versus"
+        android:textAppearance="@style/TextAppearanceLarge"
+        android:textSize="28sp"
+        tools:text="3" />
+
+    <include layout="@layout/layout_section_away_team"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+</LinearLayout>
